@@ -74,11 +74,14 @@ function Update(){
     document.getElementById("ulList").innerHTML.concat(ListStart, i, ListMid1, arrList[i], ListMid2, i, ListEnd);
     }
     localStorage.setItem('TodoListARRAY', JSON.stringify(arrList));
+    if(localStorage.getItem('TodoListARRAY') == null){
+        window.localStorage.setItem('TodoListARRAY', JSON.stringify(arrList));
+    }
 }
 
 function fn_delete(n){
     const element = document.getElementById(String(n));
-    element.remove(n);
+    element.remove();
     arrList.pop(n);
     Update();
 }
