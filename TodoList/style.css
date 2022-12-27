@@ -29,3 +29,17 @@
 .brake{
     margin-bottom: 5px;
 }
+
+h4{
+  font-size: 15px;
+}
+
+a{
+  color: green;
+  font-weight: 500;
+  font-size: inherit;
+}
+
+a:hover{
+  color: darkgreen;
+}
