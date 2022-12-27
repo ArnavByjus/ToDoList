@@ -78,7 +78,7 @@ function Update(){
 
 function fn_delete(n){
     const element = document.getElementById(String(n));
-    element.remove();
+    element.remove(n);
     arrList.pop(n);
     Update();
 }
